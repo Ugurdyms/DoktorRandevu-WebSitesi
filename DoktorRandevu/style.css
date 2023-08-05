@@ -1,0 +1,416 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: white;
+    background-image: url(img/arkaplan.jpg);
+}
+
+.menu-bar {
+    background: white;
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu-bar ul li {
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.active,
+.menu-bar ul li:hover {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.menu-bar .fa-solid {
+    margin-right: 10px;
+}
+
+.sub-menu-1 {
+    display: none;
+    position: relative;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: white;
+    margin-top: 15px;
+    margin-left: -15px;
+    font-size: 13px;
+    z-index: 100;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    color: red;
+}
+
+.conteiner .carousel-inner .carousel-item h2 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-weight: 900;
+    position: absolute;
+
+    left: 50px;
+    top: -550px;
+}
+
+.conteiner .carousel-inner .carousel-item p {
+    background: rgb(149, 143, 143);
+    font-weight: 900;
+    position: absolute;
+
+    left: 50px;
+    top: -500px;
+}
+
+.conteiner .carousel-inner .carousel-item a {
+
+    color: white;
+    position: absolute;
+
+    left: 50px;
+    top: -450px;
+}
+
+.conteiner .carousel-inner .carousel-item a:hover {
+    background: white;
+    color: black;
+}
+
+.conteiner2 {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner2 form {
+    background-image: url(img/arkaplan.jpg);
+
+}
+
+.conteiner2 form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+    padding-left: 312px;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #c3bcbc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:valid,
+.user-details .input-box input:valid {
+    border-color: dimgrey;
+}
+
+form .gender-details {
+    padding-left: 312px;
+
+}
+
+form .gender-details .gender-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .gender-details .category {
+    display: flex;
+    width: 50%;
+    margin: 14px 0;
+
+}
+
+.gender-details .category label {
+    display: flex;
+    margin-right: 20px;
+
+}
+
+.gender-details .category .dot {
+    height: 18px;
+    width: 18px;
+    background: #c2bebe;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked~.category label .one,
+#dot-2:checked~.category label .two,
+#dot-3:checked~.category label .three {
+    border-color: #c2bebe;
+    background: black;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+form .button {
+    height: 45px;
+    margin: 45px 0;
+    text-align: center;
+}
+
+form .button input {
+    height: 60%;
+    width: 60%;
+    outline: none;
+    color: #fff;
+    border: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: black;
+}
+
+form .button input:hover {
+    background: white;
+    color: black;
+}
+
+.container .card-body {
+    text-align: center;
+}
+
+.container img {
+    width: 100%;
+}
+
+.conteiner li {
+    text-align: left;
+}
+
+.container {
+    padding: 15px;
+}
+
+.container {
+    text-align: center;
+    padding: 25px;
+}
+
+.container .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active,
+.container .accordion:hover {
+    background-color: #ccc;
+}
+
+.container .panel {
+    text-align: center;
+    padding: 0 18px;
+    background-image: url(img/arkaplan.jpg);
+    display: none;
+    overflow: hidden;
+    width: 100%;
+}
+
+.container .accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.container .active:after {
+    content: "\2796";
+}
+
+.conteinerr {
+    padding: 18px;
+}
+
+.conteinerr .footer {
+    padding: 18px;
+    background-color: #beb9b9;
+
+}
+
+.conteinerr .footer h5 {
+    text-align: left;
+    padding-top: 25px;
+}
+
+.conteinerr .footer .working-hours-wrapper {
+    text-align: left;
+    padding-top: 25px;
+
+}
+
+.conteinerr .footer .contact-information-wrapper {
+    text-align: left;
+    padding-top: 25px;
+}
+
+.bilgi {
+    text-align: center;
+    padding: 10px;
+}
+
+.containerr {
+    padding: 18px;
+    background: #ccc;
+}
+
+.containerr h2 {
+    text-align: center;
+}
+
+.containerr1 img {
+    text-align: center;
+
+}
+
+.containerr1 p {
+    text-align: left;
+    padding: 50px;
+}
+
+.containerrr {
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+.containerr h4{
+    text-align: center;
+    color: #361d1d;
+}
+.container{
+    text-align: left;
+}
+.container ol{
+    padding-left: 15px;
+}
+.container ul li i{
+    float: right;
+    line-height: 24px;
+    padding-right: 30px;
+}
+.container h4{
+    padding-top: 18px;
+}
+.container h3{
+    padding-top: 10px;
+}
+.container h2{
+    padding-top: 10px;
+}
+
+form .btn-wrapper button{
+    background-color: black;
+    color: #ffff;
+}
+form .btn-wrapper button:hover{
+    background-color: #fff;
+    color: black;
+}
+.container-fluid{
+    padding-top: 20px;
+    padding-left: 300px;
+    
+}
+.wrimagecard{	
+	margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    position: relative;
+    background: #fff;
+    box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    
+}
+.wrimagecard .fa{
+	position: relative;
+    font-size: 70px;
+}
+.wrimagecard-topimage_header{
+padding: 20px;
+}
+a.wrimagecard:hover, .wrimagecard-topimage:hover {
+    box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2);
+}
+.wrimagecard-topimage a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.wrimagecard-topimage_title {
+    padding: 20px 24px;
+    height: 80px;
+    padding-bottom: 0.75rem;
+    position: relative;
+}
+.wrimagecard-topimage a {
+    border-bottom: none;
+    text-decoration: none;
+    color: #525c65;
+    transition: color 0.3s ease;
+}
